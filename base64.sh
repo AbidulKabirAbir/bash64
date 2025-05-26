@@ -54,13 +54,10 @@ if [[ -n "$input" ]]; then
     echo "❌ Error: File '$input' not found."
     exit 1
   fi
-  result=$(< "$input" $b64cmd 2>&1)
+  result=$($b64cmd < "$input" 2>&1)
 else
   echo "📝 Paste or type your text (Ctrl+D to finish):"
-  tmpfile=$(mktemp)
-  cat > "$tmpfile"
-  result=$(< "$tmpfile" $b64cmd 2>&1)
-  rm -f "$tmpfile"
+  result=$(cat | $b64cmd 2>&1)
 fi
 
 # Output
