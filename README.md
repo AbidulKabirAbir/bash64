@@ -8,7 +8,7 @@ A simple and interactive Bash script for encoding and decoding text using Base64
 
 - ✅ Encode from terminal, file, or clipboard (paste)
 - ✅ Decode Base64 input
-- ✅ Auto shows output after Ctrl+D (once)
+- ✅ Auto shows output after Ctrl+D (Two time)
 - ✅ Helpful flags and instructions
 
 ## 🚀 Usage
