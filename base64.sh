@@ -58,7 +58,7 @@ if [[ -n "$input" ]]; then
 else
   echo "📝 Paste or type your text (Ctrl+D to finish):"
   tmpfile=$(mktemp)
-  tee "$tmpfile" > /dev/null
+  cat > "$tmpfile"
   result=$(< "$tmpfile" $b64cmd 2>&1)
   rm -f "$tmpfile"
 fi
