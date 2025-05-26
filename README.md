@@ -1,4 +1,4 @@
-# bash64
+# base64
 # README.md content
 readme_content = """# Bash Base64 Encoder/Decoder
 
